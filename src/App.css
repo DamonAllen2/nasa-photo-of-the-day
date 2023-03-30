@@ -28,6 +28,18 @@
   color: #61dafb;
 }
 
+img {
+  max-width: 60%;
+}
+.photo-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.explanation {
+  max-width: 60%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
