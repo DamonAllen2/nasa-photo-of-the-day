@@ -2,6 +2,12 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from 'axios';
 import PhotoOfTheDay from "./components/PhotoOfTheDay";
+import styled from 'styled-components'
+
+const AppDiv = styled.div`
+  font-family: sans-serif;
+  text-align: center;
+`
 
 function App() {
   
@@ -18,9 +24,9 @@ useEffect(() => {
 }, [])
 
   return (
-    <div className="App">
+    <AppDiv>
       { data && <PhotoOfTheDay data={data} /> }
-    </div>
+    </AppDiv>
   );
 }
 
